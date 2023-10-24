@@ -4,7 +4,7 @@ event repository for alphabet interview
 ## API
 - GET /events - get all scheduled events
 - GET /events/filter - filter events by Query params (e.g GET localhost:5000/events/filter?name=meeting_name)
-- GET /events/sort/<attribute> - sort event table by attribute (e.g GET localhost:5000/events/sort/id)
+- GET /events/sort/:attribute - sort event table by attribute (e.g GET localhost:5000/events/sort/id)
 - GET /events/:id - get event by event id
 
 - POST /events - create new event by Query params
