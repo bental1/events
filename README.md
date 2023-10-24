@@ -5,13 +5,13 @@ event repository for alphabet interview
 - GET /events - get all scheduled events
 - GET /events/filter - filter events by Query params (e.g GET localhost:5000/events/filter?name=meeting_name)
 - GET /events/sort/<attribute> - sort event table by attribute (e.g GET localhost:5000/events/sort/id)
-- GET /events/<id> - get event by event id
+- GET /events/:id - get event by event id
 
 - POST /events - create new event by Query params
 
-- DELETE /events/<id> - delete event by event id
+- DELETE /events/:id - delete event by event id
 
-- PUT /event/<id> - configure an existing event by Query params (e.g PUT localhost:5000/events/1?name=meeting_name)
+- PUT /event/:id - configure an existing event by Query params (e.g PUT localhost:5000/events/1?name=meeting_name)
 
 ## Implementation
 - DB - MySQL - columns: id, name, participants, location, date (Not a good choice because there are no arrays in this type of DB)
